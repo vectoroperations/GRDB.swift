@@ -374,9 +374,9 @@ public final class Database: CustomStringConvertible, CustomDebugStringConvertib
         
         // We do not report read-only transactions to transaction observers, so
         // don't bother installing the observation broker for read-only connections.
-        if !configuration.readonly {
-            observationBroker = DatabaseObservationBroker(self)
-        }
+        // if !configuration.readonly {
+        //     observationBroker = DatabaseObservationBroker(self)
+        // }
     }
     
     deinit {
